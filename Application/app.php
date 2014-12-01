@@ -15,4 +15,10 @@ use Application\Universe\Universe;
 
 $universe = new Universe();
 
-echo 'Universe created at : ' . $universe->getCreationTime()->format(\DateTime::ATOM);
+echo 'Universe created at : ' . $universe->getCreationTime()->format(\DateTime::ATOM) . PHP_EOL;
+
+while (true) {
+    sleep(1);
+    $universe->age();
+    echo 'Universe age : ' . $universe->getAge() . PHP_EOL ;
+}
