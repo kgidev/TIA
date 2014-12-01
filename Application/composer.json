@@ -1,0 +1,12 @@
+{
+    "name": "kgi/tia",
+    "description": "TestIng Agents",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Kay Galba ",
+            "email": "info@kginformatik.de"
+        }
+    ]
+}
