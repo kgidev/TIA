@@ -28,7 +28,9 @@ class UniverseTest extends \PHPUnit_Framework_TestCase {
     public function testUniverse()
     {
         $this->universe = new Universe();
-        $this->universe->getAge();
+        $age = $this->universe->getAge();
+//
+        $this->assertEquals(1, 1);
         $this->markTestIncomplete('TODO');
     }
 }

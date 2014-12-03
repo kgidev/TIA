@@ -7,3 +7,4 @@
 .idea/TIA.iml
 Application/vendor
 tests/build
+vagrant/.vagrant/machines/default/virtualbox/synced_folders
