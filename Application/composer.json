@@ -17,5 +17,8 @@
     },
     "autoload": {
         "psr-4": { "Application\\": "" }
+    },
+    "config": {
+        "bin-dir": "bin/"
     }
 }
