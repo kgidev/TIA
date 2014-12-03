@@ -9,9 +9,10 @@
 
 namespace Application;
 
-require_once(__DIR__ . '/Universe/Universe.php');
-
 use Application\Universe\Universe;
+
+require_once('vendor/autoload.php');
+
 
 const SAVE_PATH = __DIR__ .'/Universe/save' ;
 
@@ -30,8 +31,6 @@ while (true) {
         break;
     }
 }
-
-$serFile = saveUniverse($universe);
 
 /**
  * load a universe with it's state from filesystem
@@ -62,4 +61,5 @@ function saveUniverse($universe)
     if (file_put_contents($file, serialize($universe))) {
         return $file;
     }
+    return null;
 }
