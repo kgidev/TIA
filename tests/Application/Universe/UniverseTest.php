@@ -21,14 +21,18 @@ class UniverseTest extends \PHPUnit_Framework_TestCase {
     protected $universe;
 
     /**
+     *
      */
-    public function testUniverse()
+    public function testUniverseForAging()
     {
+        //GIVEN
         $this->universe = new Universe();
-        $this->universe->age();
-        $age = $this->universe->getAge();
 
-        $this->assertEquals($this->universe->getAge(), 2);
+        //WHEN
+        $this->universe->age();
+
+        //THEN
+        $this->assertEquals($this->universe->getAge(), 1);
     }
 }
  

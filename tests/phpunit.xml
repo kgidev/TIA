@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit     bootstrap="bootstrap.php"
-
-             verbose="true">
+<phpunit bootstrap="bootstrap.php" verbose="true">
   <testsuites>
     <testsuite name="small">
       <directory suffix="Test.php">tests/Framework</directory>
@@ -18,19 +16,16 @@
   </testsuites>
 
   <logging>
-    <log type="coverage-html" target="build/coverage" title="PHPUnit" highlight="true"/>
-    <log type="coverage-clover" target="build/logs/clover.xml"/>
+    <!--<log type="coverage-html" target="build/coverage" title="PHPUnit" highlight="true"/>-->
+    <!--<log type="coverage-clover" target="build/logs/clover.xml"/>-->
     <!--<log type="coverage-xml" target="build/logs/coverage"/>-->
     <log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false"/>
   </logging>
 
   <filter>
-    <whitelist processUncoveredFilesFromWhitelist="true">
-      <directory suffix=".php">src</directory>
-      <exclude>
-       <file>src/Framework/Assert/Functions.php</file>
-      </exclude>
-    </whitelist>
+      <blacklist>
+          <directory suffix=".php">/var/www/tia/Application/vendor/sebastian/global-state/src</directory>
+      </blacklist>
   </filter>
 
   <php>
