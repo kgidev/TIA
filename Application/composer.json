@@ -23,5 +23,13 @@
     },
     "config": {
         "bin-dir": "bin/"
+    },
+    "require": {
+        "codeception/codeception": "*",
+        "codeception/phpbuiltinserver": "*",
+        "codeception/specify": "*",
+        "codeception/verify": "*",
+        "monolog/monolog": "*",
+        "phpseclib/phpseclib": "*"
     }
 }
