@@ -1,10 +1,5 @@
 .DS_Store
-.idea/.name
-.idea/deployment.xml
-.idea/modules.xml
-.idea/php.xml
-.idea/workspace.xml
-.idea/TIA.iml
+.idea/
 Application/vendor
 tests/build
 vagrant/.vagrant/machines/default/virtualbox/synced_folders
