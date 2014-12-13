@@ -7,3 +7,4 @@ vagrant/.vagrant/machines/default/virtualbox/action_provision
 vagrant/.vagrant/machines/default/virtualbox/action_set_name
 vagrant/.vagrant/machines/default/virtualbox/id
 vagrant/.vagrant/machines/default/virtualbox/index_uuid
+Application/log/tia.log

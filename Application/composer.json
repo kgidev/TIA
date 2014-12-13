@@ -30,6 +30,8 @@
         "codeception/specify": "*",
         "codeception/verify": "*",
         "monolog/monolog": "*",
-        "phpseclib/phpseclib": "*"
+        "phpseclib/phpseclib": "*",
+        "ext-pcntl": "*",
+        "monolog/monolog": "1.*"
     }
 }

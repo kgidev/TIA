@@ -1,3 +1,2 @@
 <?php
-$loader = require_once('/var/www/tia/Application/vendor/autoload.php');
-
+$loader = require_once(\Application\App::TIA_ROOT . '/vendor/autoload.php');
