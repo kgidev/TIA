@@ -27,8 +27,8 @@ class App
 
         while (true) {
             sleep(1);
-            $universe->age();
-            echo 'Universe age : ' . $universe->getAge() . PHP_EOL;
+            $universe->cycle();
+            echo 'Universe age : ' . $universe->getCycle() . PHP_EOL;
             $cycles++;
 
             if ($cycles > 1) {

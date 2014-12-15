@@ -29,10 +29,10 @@ class UniverseTest extends \PHPUnit_Framework_TestCase {
         $this->universe = new Universe();
 
         //WHEN
-        $this->universe->age();
+        $this->universe->cycle();
 
         //THEN
-        $this->assertEquals($this->universe->getAge(), 1);
+        $this->assertEquals($this->universe->getCycle(), 1);
     }
 }
  

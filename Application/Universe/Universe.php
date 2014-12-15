@@ -24,21 +24,20 @@ class Universe
     /* @var DateTime */
     private $creation;
 
-    /* @var int $age in seconds */
-    private $age;
+    /* @var int $cycle in seconds */
+    private $cycle;
 
     /**
      * @return int
      */
-    public function getAge()
+    public function getCycle()
     {
-        return $this->age;
+        return $this->cycle;
     }
 
     public function __construct()
     {
         $this->creation = new DateTime();
-        $this->debug(__METHOD__);
     }
 
     /**
@@ -50,10 +49,11 @@ class Universe
     }
 
     /**
-     * let the universe age one unit
+     * let the universe age one cycle
      */
-    public function age()
+    public function cycle()
     {
-        $this->age++;
+        $this->cycle++;
+        $this->debug(__CLASS__ . '( ' . spl_object_hash($this) . ') is  ' . $this->cycle . ' cycles old');
     }
 }
