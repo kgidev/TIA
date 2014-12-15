@@ -10,8 +10,6 @@
 namespace Application;
 
 use Application\Universe\Universe;
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
 
 require_once('vendor/autoload.php');
 
@@ -23,10 +21,6 @@ class App
 
     public static function run()
     {
-        $log = new Logger('tia_logger');
-        $log->pushHandler(new StreamHandler(__DIR__ . '/log/tia.log', Logger::INFO));
-        $log->info('My logger is now ready');
-
         $cycles = 0;
 
         $universe = new Universe();

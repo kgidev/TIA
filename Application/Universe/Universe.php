@@ -13,9 +13,11 @@
 namespace Application\Universe;
 
 use DateTime;
+use Application\Log\TiaLoggerTrait;
 
 class Universe
 {
+    use TiaLoggerTrait;
 
     const START = 0;
 
@@ -36,6 +38,7 @@ class Universe
     public function __construct()
     {
         $this->creation = new DateTime();
+        $this->notice(__METHOD__);
     }
 
     /**

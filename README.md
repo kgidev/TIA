@@ -2,6 +2,11 @@
 
 T.I.A TestIng Agents
 
+
+#### Feature: *Logger*
+- **Scenario** : Create a file-logger
+1. Step : create a global log-file in TIA_ROOT/log/tia.log
+
 #### Feature: *Create Universe*
 - **Scenario** : Create a universe as own process/thread (?)
     1. Step : 
