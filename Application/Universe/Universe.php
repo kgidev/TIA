@@ -38,7 +38,7 @@ class Universe
     public function __construct()
     {
         $this->creation = new DateTime();
-        $this->notice(__METHOD__);
+        $this->debug(__METHOD__);
     }
 
     /**

@@ -19,7 +19,7 @@ trait TiaLoggerTrait
     public function log($level, $message, array $context = array())
     {
         $log = new Logger('tia_logger');
-        $log->pushHandler(new StreamHandler(__DIR__ . '/tia.log', Logger::INFO));
+        $log->pushHandler(new StreamHandler(__DIR__ . '/tia.log', Logger::DEBUG));
         $log->log($level, $message, $context);
     }
 }
